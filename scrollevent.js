@@ -7,10 +7,11 @@ window.addEventListener('scroll', function(event) {
   //else el.classList.remove('shown');
 
   var el2 = document.querySelector('.show-on-scroll-map');
+  var vdo = document.querySelector("video");
   if(window.scrollY >= 50) {
 	el2.classList.add('shown');
 	if(count===0) {
-		$("#map_split").get(0).play();
+		vdo.play();
 		count = 1;
 		}
 	}
