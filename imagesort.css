@@ -1,0 +1,37 @@
+body{
+		color:white;
+		background-color:black;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+#div_root{
+	font-size:18px;
+	margin:auto;
+	height:800px;
+}
+#div_top{
+	width:100%;
+	height:100px;
+	text-align:center;
+}
+#div_main{
+	width:100%;
+	height:500px;
+}
+#div_imageright{
+	width:30%;
+	float:right;
+}
+#div_imageleft{
+	width:30%;
+	float:left;
+}
+#div_imagecompareleft{
+	width:50%;
+	float:left;
+}
+#div_imagecompareright{
+	width:50%;
+	float:right;
+}

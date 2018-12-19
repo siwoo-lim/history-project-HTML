@@ -1,0 +1,35 @@
+.show-on-scroll{
+	visibility: hidden;
+}
+.show-on-scroll.shown {
+	visibility: visible;
+	 -webkit-animation: fadein 2s;
+}
+.show-on-scroll-map{
+	-webkit-animation: fadeout 2s;
+	visibility: hidden;
+}
+.show-on-scroll-map.shown {
+	visibility: visible;
+	 -webkit-animation: fadein 2s;
+}
+.show-on-scroll-map-split {
+	visibility: hidden;
+}
+.show-on-scroll-map-split.shown {
+	visibility: visible;
+}
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadeout {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+#div_Korea_split{
+	float:right;
+	width:100px;
+	height:120px;
+	background: url("images/Korea_North_and_South.gif") no-repeat scroll 0% 0% transparent;
+}
