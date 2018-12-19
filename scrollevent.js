@@ -11,5 +11,9 @@ window.addEventListener('scroll', function(event) {
   var el3 = document.querySelector('.show-on-scroll-map-split');
   if(window.scrollY > 300) el3.classList.add('shown');
   else el3.classList.remove('shown');
-  
+
+  var el5 = document.querySelector('.show-on-scroll-compare');
+  if(window.scrollY >= 50) el5.classList.add('shown');
+  else el5.classList.remove('shown');
+
 });

@@ -19,6 +19,13 @@
 .show-on-scroll-map-split.shown {
 	visibility: visible;
 }
+.show-on-scroll-compare {
+	visibility : hidden;
+}
+.show-on-scroll-compare.shown {
+	visibility : visible;
+	 -webkit-animation: fadein 2s;
+}
 @keyframes fadein {
 	from { opacity: 0; }
 	to { opacity: 1; }
