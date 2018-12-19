@@ -1,3 +1,5 @@
+var count = 0;
+
 window.addEventListener('scroll', function(event) {
   var el = document.querySelector('.show-on-scroll');
 
@@ -5,7 +7,13 @@ window.addEventListener('scroll', function(event) {
   //else el.classList.remove('shown');
 
   var el2 = document.querySelector('.show-on-scroll-map');
-  if(window.scrollY >= 50) el2.classList.add('shown');
+  if(window.scrollY >= 50) {
+	el2.classList.add('shown');
+	if(count===0) {
+		$("#map_split").get(0).play();
+		count = 1;
+		}
+	}
   //else el2.classList.remove('shown');
 
   var el3 = document.querySelector('.show-on-scroll-map-split');
